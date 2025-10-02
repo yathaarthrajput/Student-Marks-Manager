@@ -3,7 +3,7 @@ Subjects = ["Physics", "Chemistry", "Math", "English", "Computer Science"]
 students = [
     {"roll_no": 1, "name": "Ashish", "class": 10, "marks": {"Physics": 85, "Chemistry": 90, "Math": 95, "English": 88, "Computer Science": 92}},
     {"roll_no": 2, "name": "Ram", "class": 12, "marks": {"Math": 70}},
-    {"roll_no": 3, "name": "Shyam", "class": 12, "marks": {"Physics": 60, "English": 75}},
+    {"roll_no": 3, "name": "Yathaarth", "class": 12, "marks": {"Physics": 60, "English": 75}},
     {"roll_no": 4, "name": "Sita", "class": 12, "marks": {"Chemistry": 55, "Computer Science": 65}},
     {"roll_no": 5, "name": "Gita", "class": 12, "marks": {"Physics": 95, "Chemistry": 85, "Math": 80, "English": 90, "Computer Science": 88}}
 ]
@@ -252,3 +252,4 @@ def menu():
 
 if __name__ == "__main__":
     menu()
+
