@@ -1,16 +1,14 @@
-# Fixed Subjects for marks
 Subjects = ["Physics", "Chemistry", "Math", "English", "Computer Science"]
 
-# Some sample data for testing
 students = [
-    {"roll_no": 1, "name": "Alice", "class": 10, "marks": {"Physics": 85, "Chemistry": 90, "Math": 95, "English": 88, "Computer Science": 92}},
-    {"roll_no": 2, "name": "Bob", "class": 10, "marks": {"Math": 70}},
-    {"roll_no": 3, "name": "Charlie", "class": 9, "marks": {"Physics": 60, "English": 75}},
-    {"roll_no": 4, "name": "David", "class": 11, "marks": {"Chemistry": 55, "Computer Science": 65}},
-    {"roll_no": 5, "name": "Eva", "class": 12, "marks": {"Physics": 95, "Chemistry": 85, "Math": 80, "English": 90, "Computer Science": 88}}
+    {"roll_no": 1, "name": "Ashish", "class": 10, "marks": {"Physics": 85, "Chemistry": 90, "Math": 95, "English": 88, "Computer Science": 92}},
+    {"roll_no": 2, "name": "Ram", "class": 12, "marks": {"Math": 70}},
+    {"roll_no": 3, "name": "Shyam", "class": 12, "marks": {"Physics": 60, "English": 75}},
+    {"roll_no": 4, "name": "Sita", "class": 12, "marks": {"Chemistry": 55, "Computer Science": 65}},
+    {"roll_no": 5, "name": "Gita", "class": 12, "marks": {"Physics": 95, "Chemistry": 85, "Math": 80, "English": 90, "Computer Science": 88}}
 ]
 
-# Defining FUNCTIONS
+
 def getClass(allowAll = False):
     """Prompts for a class number (1-12) or 'ALL' and validates input."""
     while True:
@@ -76,7 +74,7 @@ def addStudent():
 
     newStu = {"roll_no": rn, "name": nm, "class": cls, "marks": marks}
     students.append(newStu)
-    print("Student added successfully! 😊")
+    print("Student added successfully!")
 
 def deleteStudent():
     """Deletes a student from the system."""
@@ -89,7 +87,7 @@ def deleteStudent():
     stu = findStudent(c, rr)
     if stu:
         students.remove(stu)
-        print("Student deleted! 👋")
+        print("Student deleted, Request Successful!")
     else:
         print("Student not found!")
 
@@ -217,7 +215,7 @@ def classStats():
         print(f"Class average: {sum(student_stats) / len(student_stats):.2f}")
 
 
-# Main Menu
+
 def menu():
     """The main menu loop for the student management system."""
     while True:
@@ -247,7 +245,7 @@ def menu():
         elif c == "5":
             classStats()
         elif c == "6":
-            print("Goodbye! 👋")
+            print("THANKS FOR COMING, CREATED BY YATHAARTH RAJPUT!")
             break
         else:
             print("Invalid menu choice!")
